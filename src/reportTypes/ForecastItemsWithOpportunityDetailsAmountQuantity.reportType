@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>ForecastingItem</baseObject>
+    <category>forecasts</category>
+    <deployed>false</deployed>
+    <description>Viewing information about forecasting amounts, including adjustment amount and quantity information for both Quantity &amp; Amount Forecasting with Opportunity details.</description>
+    <join>
+        <outerJoin>false</outerJoin>
+        <relationship>ForecastingFactOpps</relationship>
+    </join>
+    <label>Amt &amp; Qty Forecast w/ Opportunity Details</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AmountWithoutAdjustments</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AmountWithoutManagerAdjustment</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>EndDate</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>ForecastAmount</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ForecastCategoryName</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>ForecastingItemCategory</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>ForecastQuantity</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ForecastingType</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>HasAdjustment</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>HasOwnerAdjustment</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsAmount</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsQuantity</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Owner</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>OwnerOnlyAmount</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>OwnerOnlyQuantity</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ProductFamily</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>QuantityWithoutAdjustments</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>QuantityWithoutManagerAdjustment</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>StartDate</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <masterLabel>Forecasting Items</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner: Active</displayNameOverride>
+            <field>Owner.IsActive</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner: First Name</displayNameOverride>
+            <field>Owner.FirstName</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner: Last Name</displayNameOverride>
+            <field>Owner.LastName</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner: Manager</displayNameOverride>
+            <field>Owner.Manager</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner: Division</displayNameOverride>
+            <field>Owner.Division</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner: E-mail</displayNameOverride>
+            <field>Owner.Email</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner Role</displayNameOverride>
+            <field>Owner.UserRole</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Owner.Id</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <masterLabel>Forecast Owner</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Amount</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsClosed</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>CloseDate</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity Description</displayNameOverride>
+            <field>Description</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ExpectedRevenue</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>HasOpportunityLineItem</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity Last Activity</displayNameOverride>
+            <field>LastActivityDate</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastStageChangeDate</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LeadSource</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>NextStep</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Opportunity Owner</displayNameOverride>
+            <field>Owner</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Primary Campaign</displayNameOverride>
+            <field>Campaign</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Primary Partner Account</displayNameOverride>
+            <field>PrimaryPartnerAccount</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsPrivate</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Probability</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>TotalOpportunityQuantity</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>StageName</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>StageSortOrder</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Type</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsWon</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <masterLabel>Opportunity General</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Reason_Lost_Details__c</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>I_Created__c</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Reason_Lost__c</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Tracking_Number__c</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <masterLabel>Opportunity Custom</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account ID</displayNameOverride>
+            <field>Account.Id</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Account</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Number</displayNameOverride>
+            <field>Account.AccountNumber</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner</displayNameOverride>
+            <field>Account.Owner</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Site</displayNameOverride>
+            <field>Account.Site</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Source</displayNameOverride>
+            <field>Account.AccountSource</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Annual Revenue</displayNameOverride>
+            <field>Account.AnnualRevenue</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account: Created By</displayNameOverride>
+            <field>Account.CreatedBy</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account: Created Date</displayNameOverride>
+            <field>Account.CreatedDate</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account: Description</displayNameOverride>
+            <field>Account.Description</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Employees</displayNameOverride>
+            <field>Account.NumberOfEmployees</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Industry</displayNameOverride>
+            <field>Account.Industry</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account: Last Activity</displayNameOverride>
+            <field>Account.LastActivityDate</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account: Last Modified By</displayNameOverride>
+            <field>Account.LastModifiedBy</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account: Last Modified Date</displayNameOverride>
+            <field>Account.LastModifiedDate</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Ownership</displayNameOverride>
+            <field>Account.Ownership</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Parent Account</displayNameOverride>
+            <field>Account.Parent</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Rating</displayNameOverride>
+            <field>Account.Rating</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Ticker Symbol</displayNameOverride>
+            <field>Account.TickerSymbol</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tradestyle</displayNameOverride>
+            <field>Account.Tradestyle</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Type</displayNameOverride>
+            <field>Account.Type</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Year Started</displayNameOverride>
+            <field>Account.YearStarted</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <masterLabel>Account General</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Address</displayNameOverride>
+            <field>Account.BillingAddress</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing City</displayNameOverride>
+            <field>Account.BillingCity</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Country</displayNameOverride>
+            <field>Account.BillingCountry</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Latitude</displayNameOverride>
+            <field>Account.BillingLatitude</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Longitude</displayNameOverride>
+            <field>Account.BillingLongitude</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing State/Province</displayNameOverride>
+            <field>Account.BillingState</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Street</displayNameOverride>
+            <field>Account.BillingStreet</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Zip/Postal Code</displayNameOverride>
+            <field>Account.BillingPostalCode</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping Address</displayNameOverride>
+            <field>Account.ShippingAddress</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping City</displayNameOverride>
+            <field>Account.ShippingCity</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping Country</displayNameOverride>
+            <field>Account.ShippingCountry</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping Latitude</displayNameOverride>
+            <field>Account.ShippingLatitude</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping Longitude</displayNameOverride>
+            <field>Account.ShippingLongitude</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping State/Province</displayNameOverride>
+            <field>Account.ShippingState</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping Street</displayNameOverride>
+            <field>Account.ShippingStreet</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping Zip/Postal Code</displayNameOverride>
+            <field>Account.ShippingPostalCode</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <masterLabel>Account Address</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fax</displayNameOverride>
+            <field>Account.Fax</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Phone</displayNameOverride>
+            <field>Account.Phone</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Website</displayNameOverride>
+            <field>Account.Website</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <masterLabel>Account Ph/Fax/Website</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Account.SLA__c</field>
+            <table>ForecastingItem.ForecastingFactOpps</table>
+        </columns>
+        <masterLabel>Account Custom</masterLabel>
+    </sections>
+</ReportType>

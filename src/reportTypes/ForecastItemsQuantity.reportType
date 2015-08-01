@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>ForecastingItem</baseObject>
+    <category>forecasts</category>
+    <deployed>false</deployed>
+    <description>View forecast information for quantity forecasts, including quantity adjustment information.</description>
+    <label>Quantity Forecast Items</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>EndDate</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ForecastCategoryName</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>ForecastQuantity</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>ForecastingItemCategory</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ForecastingType</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>HasAdjustment</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>HasOwnerAdjustment</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsQuantity</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Owner</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>OwnerOnlyQuantity</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ProductFamily</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>QuantityWithoutAdjustments</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>QuantityWithoutManagerAdjustment</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>StartDate</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <masterLabel>Forecasting Items</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner: Active</displayNameOverride>
+            <field>Owner.IsActive</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner: First Name</displayNameOverride>
+            <field>Owner.FirstName</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner: Last Name</displayNameOverride>
+            <field>Owner.LastName</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner: Manager</displayNameOverride>
+            <field>Owner.Manager</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner: Division</displayNameOverride>
+            <field>Owner.Division</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner: E-mail</displayNameOverride>
+            <field>Owner.Email</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner Role</displayNameOverride>
+            <field>Owner.UserRole</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Owner.Id</field>
+            <table>ForecastingItem</table>
+        </columns>
+        <masterLabel>Forecast Owner</masterLabel>
+    </sections>
+</ReportType>
