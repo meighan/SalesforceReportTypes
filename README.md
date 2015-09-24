@@ -20,6 +20,8 @@ Each report type has a custom fields section for each object to move custom fiel
 |Accounts w/ w/o Assigned_Territories | Account, AccountTerritoryAssociation, Territory, Terr Type)
 
 ###Forecasting###
+You can [install the unmanaged package](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1a0000001vyN) into your sandbox using the app link.  
+
 |**Report**|**Objects**|
 |----------|------------|
 |Items | Forecast Item, Item Owner |
