@@ -1,5 +1,8 @@
 # Salesforce Report Types
-
+<a href="https://githubsfdeploy.herokuapp.com?owner=meighan&repo=SalesforceReportTypes">
+  <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
+</a>
 Series of custom report types with fields broken into sections to match the standard reports for increased usability.
 
 Report Types include Enterprise Territory Management, Collaborative Forecasting, and Ideas so far.
