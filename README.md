@@ -11,8 +11,8 @@ SF Collaborative Forecasting reports include report types both quantity and amou
 
 Each report type has a custom fields section for each object to move custom fields into.
 
-##Report List
-###General
+## Report List
+### General
 
 |**Report**|**Objects**|
 |---------|----------|
@@ -24,7 +24,7 @@ Each report type has a custom fields section for each object to move custom fiel
 |Accounts w/ w/o Activities | Account, Activities |
 |Accounts w/ w/o Assigned_Territories | Account, AccountTerritoryAssociation, Territory, Terr Type)
 
-###Forecasting
+### Forecasting
 You can [install the unmanaged package](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t1a0000001vyN) into your sandbox using the app link.  
 
 |**Report**|**Objects**|
@@ -47,16 +47,14 @@ You can [install the unmanaged package](https://test.salesforce.com/packaging/in
 Items = Items
 Quotas = Forecast Quotas
 
-###Ideas
-
+### Ideas
 |**Report**|**Objects**|
 |----------|-----------|
 |Ideas | Ideas |
 |Ideas w/ w/o Votes | Ideas, Votes |
 |Ideas w/ w/o Comments | Ideas, Comments |
 
-###Enterprise Territory Management
-
+### Enterprise Territory Management
 |**Report**|**Objects**|
 |----------|-----------|
 |Accounts w/w/o Territories | Account, AcctTerritoryAssociation, Territory, Terr Type, Territory Users |
@@ -69,4 +67,5 @@ Quotas = Forecast Quotas
 |Territory w/ w/o Users_Admin | Model, Territory, Terr Type, Territory User |
 |Users w/ w/o Territories | User, Territory, Terr Type |
 |Users w/ w/o Territories Admin | User, Territory, Terr Type |
+
 Model = Territory Model
