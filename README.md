@@ -14,10 +14,10 @@ Each report type has a custom fields section for each object to move custom fiel
 ##Report List##
 ###General###
 |**Report**|**Objects**|
-|:---------|----------|
-|Contacts|Contacts, Account|
-|Contacts w/ w/o Accounts |Contacts, Account|
-|Contacts w/ w/o Activities |Contacts, Account, Activities |
+|---------|----------|
+|Contacts| Contacts, Account|
+|Contacts w/ w/o Accounts | Contacts, Account|
+|Contacts w/ w/o Activities | Contacts, Account, Activities |
 |Dashboards | Dashboard, Dashboard Components |
 |Leads w/ w/o Campaign & Member History | Lead, Campaign History, Campaign Member |
 |Accounts w/ w/o Activities | Account, Activities |
@@ -56,14 +56,14 @@ Quotas = Forecast Quotas
 ###Enterprise Territory Management###
 |**Report**|**Objects**|
 |----------|-----------|
-|Accounts w/w/o Territories |Account, AcctTerritoryAssociation, Territory, Terr Type, Territory Users |
-|Territories w/ w/o Assigned_Records |Model, Territory, Terr Type |
-|Territory Models w/ w/o Territories Rules |Model, Territory, Terr Type w/ w/o Territories Model, Territory, Terr Type |
-|Territory w/ Parent_GP GGP Details |Model, Territory, Terr Type, Terr. Parent, Terr ParentParent, Territory Parent's Parent's Parent |
-|Territory  w/ w/o Rules |Model, Territory, Terr Type, RuleItem|
-|Territory w/ Parent |Model, Territory, Terr Type, Terr Parent |
-|Territory w/ w/o Users |Model, Territory, Terr Type, Territory User |
-|Territory w/ w/o Users_Admin |Model, Territory, Terr Type, Territory User |
-|Users w/ w/o Territories |User, Territory, Terr Type |
-|Users w/ w/o Territories Admin |User, Territory, Terr Type |
+|Accounts w/w/o Territories | Account, AcctTerritoryAssociation, Territory, Terr Type, Territory Users |
+|Territories w/ w/o Assigned_Records  | Model, Territory, Terr Type |
+|Territory Models w/ w/o Territories Rules | Model, Territory, Terr Type w/ w/o Territories Model, Territory, Terr Type |
+|Territory w/ Parent_GP GGP Details | Model, Territory, Terr Type, Terr. Parent, Terr ParentParent, Territory Parent's Parent's Parent |
+|Territory  w/ w/o Rules | Model, Territory, Terr Type, RuleItem|
+|Territory w/ Parent | Model, Territory, Terr Type, Terr Parent |
+|Territory w/ w/o Users | Model, Territory, Terr Type, Territory User |
+|Territory w/ w/o Users_Admin | Model, Territory, Terr Type, Territory User |
+|Users w/ w/o Territories | User, Territory, Terr Type |
+|Users w/ w/o Territories Admin | User, Territory, Terr Type |
 Model = Territory Model
